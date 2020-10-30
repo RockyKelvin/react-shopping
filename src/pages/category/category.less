@@ -1,0 +1,126 @@
+@mianMenu:200px;
+.wrap{
+    padding-top: 100px;
+}
+.main{
+    width: 750px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    overflow: hidden;
+    .mainMenu{
+        overflow: hidden;
+        height: 90vh;
+        width: @mianMenu;
+        background-color: #eeeeee;
+        list-style: none;
+        font-size: 25px;
+        li{
+            height: 100px;
+            line-height: 100px;
+            cursor: pointer;
+        }
+        .active{
+            background-color: white;
+        }
+    }
+    .sublist{     
+        height: 90vh;
+        overflow: hidden;
+        width: 750px - @mianMenu;
+        text-align: center;
+        .subnav{
+            display: fixed;
+            height: 100px;
+            background-color:#eeeeee;
+            ul{ 
+                display: flex;
+                flex-direction:row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                list-style: none;
+                line-height: 100px;
+                li{
+                    cursor: pointer;
+                    width: 100px;
+                    text-align: center;
+                    font-size: 15px;
+                    .subac{
+                        background-color: honeydew;
+                    }
+                    span{
+                        border: 1px solid gainsboro;
+                        padding: 10px 10px;
+                        border-radius: 15%;
+                    }
+                    span:hover{
+                      background-color: honeydew;
+                    }
+                }
+            }
+        }
+        .product_list{
+            height:80vh;
+            overflow: auto;
+            ul{
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 0 30px;
+                li{
+                    display: flex;
+                    border-bottom:1px solid #eeeeee;
+                    width: 100%;
+                    height: 200px;
+                    .img{
+                        padding-top: 20px;
+                        width: 150px;
+                        height: 150px;
+                        img{
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                    .context{
+                        text-align: left;
+                        .title{
+                            padding: 20px 0;
+                            padding-left: 30px;
+                            font-size: 30px;
+                            font-weight: 700;
+                            height: 50px;
+                            line-height: 50px;
+                        }
+                        span{
+                            border:0;
+                            color: gray;
+                        }
+                        .price{
+                            color: red;
+                            height: 40px;
+                            line-height: 40px;
+                            padding-left: 30px;
+                        }
+                        .stepper{
+                            height: 40px;
+                            line-height: 40px;
+                            padding-left: 30px;
+                            padding-top: 15px;
+                        }
+
+                    }
+
+                }
+            }
+            .loading_icon{
+                width:100px;
+                display: block;
+                margin: 0 auto;
+            }
+            .end{
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.wrap{
+    background-color: #eeeeee;
+    height: 100vh;
+    width: 750px;
+}
+.cart_list{
+    padding-top: 100px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0 20px;
+        li{
+            background-color: white;
+            display: flex;
+            border-bottom:1px solid #eeeeee;
+            width: 100%;
+            height: 200px;
+            .img{
+                padding-top: 20px;
+                width: 150px;
+                height: 150px;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .context{
+                text-align: left;
+                .title{
+                    padding: 20px 0;
+                    padding-left: 30px;
+                    font-size: 30px;
+                    font-weight: 700;
+                    height: 50px;
+                    line-height: 50px;
+                }
+                span{
+                    border:0;
+                    color: gray;
+                }
+                .price{
+                    color: red;
+                    height: 40px;
+                    line-height: 40px;
+                    padding-left: 30px;
+                }
+                .stepper{
+                    height: 40px;
+                    line-height: 40px;
+                    padding-left: 30px;
+                    padding-top: 15px;
+                }
+
+            }
+            .checkbox{
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                margin: auto 0;
+            }
+            .cart_checkbox:checked {
+                background: rgb(88, 173, 106);
+            }
+            .cart_checkbox {
+                width:45px;
+                height:45px;
+                background-color:#ffffff;
+                border:solid 1px #dddddd;
+                -webkit-border-radius:50%;
+                border-radius:50%;
+                font-size:0.8rem;
+                margin:0;
+                padding:0;
+                position:relative;
+                display:inline-block;
+                vertical-align:top;
+                cursor:default;
+                -webkit-appearance:none;
+                -webkit-user-select:none;
+                user-select:none;
+                -webkit-transition:background-color ease 0.1s;
+                transition:background-color ease 0.1s;
+            }
+            .cart_checkbox:checked::after {
+                content:'';
+                top:10px;
+                left:10px;
+                position:absolute;
+                background:transparent;
+                border:#fff solid 5px;
+                border-top:none;
+                border-right:none;
+                height:10px;
+                width:15px;
+                -moz-transform:rotate(-45deg);
+                -ms-transform:rotate(-45deg);
+                -webkit-transform:rotate(-45deg);
+                transform:rotate(-45deg);
+            }
+        }
+    }
+    .footer{
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        bottom: 100px;
+        width: 750px;
+        height: 120px;
+        background-color: white;
+        .checkedAll{
+            width: 150px;
+            height: 120px;
+            text-align: center;
+            line-height: 120px;
+            .cart_checkedAll{
+                margin: auto 0;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                margin: auto 0;
+            }
+            .cart_checkedAll:checked {
+                background: rgb(88, 173, 106);
+            }
+            .cart_checkedAll {
+                width:45px;
+                height:45px;
+                background-color:#ffffff;
+                border:solid 1px #dddddd;
+                -webkit-border-radius:50%;
+                border-radius:50%;
+                font-size:0.8rem;
+                margin:0;
+                padding:0;
+                position:relative;
+                display:inline-block;
+                vertical-align:top;
+                cursor:default;
+                -webkit-appearance:none;
+                -webkit-user-select:none;
+                user-select:none;
+                -webkit-transition:background-color ease 0.1s;
+                transition:background-color ease 0.1s;
+            }
+        }
+        .buyAll{
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            margin: auto 0;
+            width: 130px;
+            height: 60px;
+            background-color: rgb(88, 173, 106);
+            border: 1px solid rgb(88, 173, 106);
+            border-radius: 10%;
+            box-shadow:gray 1px 1px 6px;
+        }
+    }
+}

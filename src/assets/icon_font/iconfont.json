@@ -1,0 +1,37 @@
+{
+  "id": "2120646",
+  "name": "美菜商城2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "689243",
+      "name": "购物车2",
+      "font_class": "gouwuche2",
+      "unicode": "e7e7",
+      "unicode_decimal": 59367
+    },
+    {
+      "icon_id": "1048877",
+      "name": "分类",
+      "font_class": "icon_category",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "5732295",
+      "name": "首页-full",
+      "font_class": "home-full",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "6744022",
+      "name": "律领英我的",
+      "font_class": "wode",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}
